@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>INEPOS — Instituto Educativo</title>
+  <meta name="description" content="INEPOS — Formación técnica, vocacional y superior en Costa Rica." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="icon" type="image/webp" href="assets/img/favicon.webp" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container d-flex justify-content-end align-items-center gap-4">
+      <a href="mailto:info@inepos.com" aria-label="Correo electrónico INEPOS">
+        <svg width="15" height="15" aria-hidden="true"><use href="assets/img/icons/sprite.svg#email"></use></svg>
+        info@inepos.com
+      </a>
+      <a href="tel:27701213" aria-label="Teléfono INEPOS">
+        <svg width="15" height="15" aria-hidden="true"><use href="assets/img/icons/sprite.svg#phone"></use></svg>
+        2770-1213
+      </a>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg sticky-top" id="mainNav" aria-label="Navegación principal">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#inicio" aria-label="INEPOS inicio">
+        <img src="assets/img/Logo.webp" alt="INEPOS logo" class="navbar-logo" width="120" height="42" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto gap-1">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cursos">Cursos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#campus">Campus</a></li>
+          <li class="nav-item"><a class="nav-link" href="#universidad">Universidad</a></li>
+          <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero" id="inicio" aria-label="Banner principal">
+    <div class="hero-overlay"></div>
+    <div class="swiper hero-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="hero-bg" style="background-image: url('assets/img/banner.webp')"></div>
+          <div class="hero-content container">
+            <h1>SERVICIOS Y FACILIDADES</h1>
+            <p>Conozca los servicios que ofrece el instituto para alcanzar metas de superación</p>
+            <a href="#servicios" class="btn btn-hero" aria-label="Ver servicios de INEPOS">Servicios</a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="hero-bg" style="background-image: url('assets/img/banner2.webp')"></div>
+          <div class="hero-content container">
+            <h1>FORMACIÓN TÉCNICA Y SUPERIOR</h1>
+            <p>Programas educativos de calidad en Pérez Zeledón y San Vito de Coto Brus</p>
+            <a href="#cursos" class="btn btn-hero" aria-label="Ver cursos de INEPOS">Nuestros Cursos</a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="hero-bg hero-bg--banner3" style="background-image: url('assets/img/banner3.webp')"></div>
+          <div class="hero-content container">
+            <h1>EMPRENDEDURISMO E INNOVACIÓN</h1>
+            <p>Desarrolle sus habilidades con tecnología de vanguardia y alto compromiso con la calidad</p>
+            <a href="#nosotros" class="btn btn-hero" aria-label="Conocer más sobre INEPOS">Conózcanos</a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-prev" aria-label="Slide anterior"></div>
+      <div class="swiper-button-next" aria-label="Slide siguiente"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <section class="sobre-nosotros section-pad" id="nosotros" aria-label="Sobre nosotros">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5">
+          <div class="nosotros-img-wrap">
+            <div class="nosotros-img-placeholder">
+              <img src="assets/img/img.webp" alt="Estudiantes en clase en INEPOS" loading="lazy" />
+            </div>
+            <div class="nosotros-badge" aria-hidden="true">
+              <span>+15</span>
+              <small>Años de experiencia</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="nosotros-content">
+            <span class="section-eyebrow">Quiénes somos</span>
+            <h2 class="section-title text-start">SOBRE NOSOTROS</h2>
+            <p>En <strong>INEPOS</strong> impartimos formación y capacitación para personas y empresas que buscan desarrollar habilidades y adquirir conocimientos en áreas específicas y relevantes para el mercado laboral actual, el desarrollo y crecimiento personal y la preparación para el emprendimiento.</p>
+            <p>Contamos con dos sedes: <strong>Pérez Zeledón</strong> y <strong>San Vito</strong> donde desarrollamos programas que abarcan educación técnica, vocacional, educación superior y postgrado; con tecnología de vanguardia y un alto compromiso con la calidad educativa.</p>
+            <a href="#" class="btn btn-primary-custom mt-2" aria-label="Conocer más sobre INEPOS">Conózcanos</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="nuestros-servicios section-pad bg-gray" id="servicios" aria-label="Nuestros servicios">
+    <div class="container">
+      <h2 class="section-title text-center">NUESTROS SERVICIOS</h2>
+      <p class="section-subtitle text-center">Ofrecemos soluciones educativas integrales para personas y organizaciones</p>
+      <div class="row g-4 mt-2 justify-content-center">
+
+        <div class="col-lg-4 col-md-6">
+          <article class="servicio-card text-center">
+            <div class="servicio-icon">
+              <img src="assets/img/Formacion-profesional.webp" alt="Formación profesional" width="72" height="72" loading="lazy" />
+            </div>
+            <h3>Formación profesional</h3>
+            <p>Programas técnicos y vocacionales diseñados para insertar al estudiante en el mercado laboral con competencias actualizadas.</p>
+            <a href="#cursos" class="link-more" aria-label="Leer más sobre Formación profesional">Leer más</a>
+          </article>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <article class="servicio-card text-center">
+            <div class="servicio-icon">
+              <img src="assets/img/Capacitacion-empresarial.webp" alt="Capacitación empresarial" width="72" height="72" loading="lazy" />
+            </div>
+            <h3>Capacitación empresarial</h3>
+            <p>Desarrollamos planes de capacitación a medida para empresas que desean fortalecer el talento humano y mejorar su productividad.</p>
+            <a href="#contacto" class="link-more" aria-label="Leer más sobre Capacitación empresarial">Leer más</a>
+          </article>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <article class="servicio-card text-center">
+            <div class="servicio-icon">
+              <img src="assets/img/Emprendedurismo.webp" alt="Emprendedurismo" width="72" height="72" loading="lazy" />
+            </div>
+            <h3>Emprendedurismo</h3>
+            <p>Fomentamos la cultura emprendedora brindando herramientas y conocimientos para desarrollar ideas de negocio exitosas.</p>
+            <a href="#contacto" class="link-more" aria-label="Leer más sobre Emprendedurismo">Leer más</a>
+          </article>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="proximos-cursos section-pad" id="cursos" aria-label="Próximos cursos">
+    <div class="container">
+      <h2 class="section-title text-center">PRÓXIMOS CURSOS</h2>
+      <p class="section-subtitle text-center">Inscríbete en nuestros programas y da el siguiente paso en tu desarrollo profesional</p>
+
+      <div class="swiper mt-4" id="swiper-proximos">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <article class="course-card">
+              <div class="card-thumb">
+                <img src="assets/img/cursos/curso-redes-datos.webp" alt="Introducción a Redes y Comunicación de Datos" loading="lazy" />
+              </div>
+              <div class="card-body-custom">
+                <span class="badge-category">Tecnología e Informática</span>
+                <h4>Introducción a Redes y Comunicación de Datos</h4>
+                <span class="badge-cert cert-digital">Certificado Digital</span>
+                <div class="card-meta">
+                  <div class="meta-item">
+                    <span class="meta-label">Duración</span>
+                    <span class="meta-value">2 Bimestres</span>
+                  </div>
+                  <div class="meta-item">
+                    <span class="meta-label">Modalidad</span>
+                    <span class="meta-value">Virtual</span>
+                  </div>
+                  <div class="meta-item">
+                    <span class="meta-label">Matrícula</span>
+                    <span class="meta-value price">&#8353;20.000</span>
+                  </div>
+                  <div class="meta-item">
+                    <span class="meta-label">Mensualidad</span>
+                    <span class="meta-value price">&#8353;40.800</span>
+                  </div>
+                </div>
+                <a href="#" class="btn-more" aria-label="Más información sobre Introducción a Redes">Más información</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="swiper-slide">
+            <article class="course-card">
+              <div class="card-thumb">
+                <img src="assets/img/cursos/curso-experto-planillas.webp" alt="Experto en Planillas" loading="lazy" />
+              </div>
+              <div class="card-body-custom">
+                <span class="badge-category">Administración y Gestión</span>
+                <h4>Experto en Planillas</h4>
+                <span class="badge-cert cert-digital">Certificado Digital</span>
+                <div class="card-meta">
+                  <div class="meta-item">
+                    <span class="meta-label">Duración</span>
+                    <span class="meta-value">1 Trimestre</span>
+                  </div>
+                  <div class="meta-item">
+                    <span class="meta-label">Modalidad</span>
+                    <span class="meta-value">Presencial</span>
+                  </div>
+                  <div class="meta-item">
+                    <span class="meta-label">Matrícula</span>
+                    <span class="meta-value price">&#8353;20.000</span>
+                  </div>
+                  <div class="meta-item">
+                    <span class="meta-label">Mensualidad</span>
+                    <span class="meta-value price">&#8353;40.800</span>
+                  </div>
+                </div>
+                <a href="#" class="btn-more" aria-label="Más información sobre Experto en Planillas">Más información</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="swiper-slide">
+            <article class="course-card">
+              <div class="card-thumb">
+                <img src="assets/img/cursos/curso-masaje.webp" alt="Masaje Básico" loading="lazy" />
+              </div>
+              <div class="card-body-custom">
+                <span class="badge-category">Salud y Bienestar</span>
+                <h4>Masaje Básico</h4>
+                <span class="badge-cert cert-fisico">Certificado Físico</span>
+                <div class="card-meta">
+                  <div class="meta-item">
+                    <span class="meta-label">Duración</span>
+                    <span class="meta-value">16 horas</span>
+                  </div>
+                  <div class="meta-item">
+                    <span class="meta-label">Modalidad</span>
+                    <span class="meta-value">Virtual</span>
+                  </div>
+                  <div class="meta-item">
+                    <span class="meta-label">Matrícula</span>
+                    <span class="meta-value price">&#8353;20.000</span>
+                  </div>
+                  <div class="meta-item">
+                    <span class="meta-label">Mensualidad</span>
+                    <span class="meta-value price">&#8353;40.800</span>
+                  </div>
+                </div>
+                <a href="#" class="btn-more" aria-label="Más información sobre Masaje Básico">Más información</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="swiper-slide">
+            <article class="course-card">
+              <div class="card-thumb">
+                <img src="assets/img/cursos/curso-diseno-grafico.webp" alt="Diseño Gráfico" loading="lazy" />
+              </div>
+              <div class="card-body-custom">
+                <span class="badge-category">Comunicación Visual</span>
+                <h4>Diseño Gráfico</h4>
+                <span class="badge-cert cert-digital">Certificado Digital</span>
+                <div class="card-meta">
+                  <div class="meta-item">
+                    <span class="meta-label">Duración</span>
+                    <span class="meta-value">7 meses</span>
+                  </div>
+                  <div class="meta-item">
+                    <span class="meta-label">Modalidad</span>
+                    <span class="meta-value">Virtual</span>
+                  </div>
+                  <div class="meta-item">
+                    <span class="meta-label">Matrícula</span>
+                    <span class="meta-value price">&#8353;20.400</span>
+                  </div>
+                  <div class="meta-item">
+                    <span class="meta-label">Mensualidad</span>
+                    <span class="meta-value price">&#8353;49.980</span>
+                  </div>
+                </div>
+                <a href="#" class="btn-more" aria-label="Más información sobre Diseño Gráfico">Más información</a>
+              </div>
+            </article>
+          </div>
+
+        </div>
+        <div class="swiper-button-prev" aria-label="Curso anterior"></div>
+        <div class="swiper-button-next" aria-label="Curso siguiente"></div>
+        <div class="swiper-pagination" id="pag-proximos"></div>
+      </div>
+
+      <div class="text-center mt-5">
+        <a href="#" class="btn btn-outline-custom" aria-label="Ver todos los cursos">Todos los cursos</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cursos-destacados section-pad" id="destacados" aria-label="Cursos destacados">
+    <div class="container">
+      <h2 class="section-title text-center">CURSOS DESTACADOS</h2>
+      <p class="section-subtitle text-center">Nuestros programas más populares con alta demanda en el mercado laboral</p>
+
+      <div class="swiper mt-4" id="swiper-destacados">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <article class="course-card">
+              <div class="card-thumb">
+                <img src="assets/img/cursos/curso-experto-planillas.webp" alt="Experto en Planillas" loading="lazy" />
+              </div>
+              <div class="card-body-custom">
+                <span class="badge-category">Comunicación Visual</span>
+                <h4>Experto en Planillas</h4>
+                <span class="badge-cert cert-digital">Certificado Digital</span>
+                <div class="card-meta">
+                  <div class="meta-item">
+                    <span class="meta-label">Duración</span>
+                    <span class="meta-value">7 meses</span>
+                  </div>
+                  <div class="meta-item">
+                    <span class="meta-label">Modalidad</span>
+                    <span class="meta-value">Virtual</span>
+                  </div>
+                  <div class="meta-item">
+                    <span class="meta-label">Matrícula</span>
+                    <span class="meta-value price">&#8353;20.400</span>
+                  </div>
+                  <div class="meta-item">
+                    <span class="meta-label">Mensualidad</span>
+                    <span class="meta-value price">&#8353;49.980</span>
+                  </div>
+                </div>
+                <a href="#" class="btn-more" aria-label="Más información sobre Experto en Planillas destacado">Más información</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="swiper-slide">
+            <article class="course-card">
+              <div class="card-thumb">
+                <img src="assets/img/cursos/curso-farmacia.webp" alt="Asistente en Farmacia" loading="lazy" />
+              </div>
+              <div class="card-body-custom">
+                <span class="badge-category">Salud y Bienestar</span>
+                <h4>Asistente en Farmacia</h4>
+                <span class="badge-cert cert-fisico">Certificado Físico</span>
+                <div class="card-meta">
+                  <div class="meta-item">
+                    <span class="meta-label">Duración</span>
+                    <span class="meta-value">11 meses</span>
+                  </div>
+                  <div class="meta-item">
+                    <span class="meta-label">Modalidad</span>
+                    <span class="meta-value">Presencial</span>
+                  </div>
+                  <div class="meta-item">
+                    <span class="meta-label">Matrícula</span>
+                    <span class="meta-value price">&#8353;20.000</span>
+                  </div>
+                  <div class="meta-item">
+                    <span class="meta-label">Mensualidad</span>
+                    <span class="meta-value price">&#8353;40.800</span>
+                  </div>
+                </div>
+                <a href="#" class="btn-more" aria-label="Más información sobre Asistente en Farmacia">Más información</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="swiper-slide">
+            <article class="course-card">
+              <div class="card-thumb">
+                <img src="assets/img/cursos/curso-asistente-pacientes.webp" alt="Asistente de Pacientes" loading="lazy" />
+              </div>
+              <div class="card-body-custom">
+                <span class="badge-category">Salud y Bienestar</span>
+                <h4>Asistente de Pacientes</h4>
+                <span class="badge-cert cert-fisico">Certificado Físico</span>
+                <div class="card-meta">
+                  <div class="meta-item">
+                    <span class="meta-label">Duración</span>
+                    <span class="meta-value">3 Cuatrimestres</span>
+                  </div>
+                  <div class="meta-item">
+                    <span class="meta-label">Modalidad</span>
+                    <span class="meta-value">Presencial</span>
+                  </div>
+                  <div class="meta-item">
+                    <span class="meta-label">Matrícula</span>
+                    <span class="meta-value price">&#8353;20.400</span>
+                  </div>
+                  <div class="meta-item">
+                    <span class="meta-label">Mensualidad</span>
+                    <span class="meta-value price">&#8353;40.800</span>
+                  </div>
+                </div>
+                <a href="#" class="btn-more" aria-label="Más información sobre Asistente de Pacientes">Más información</a>
+              </div>
+            </article>
+          </div>
+
+        </div>
+        <div class="swiper-button-prev" aria-label="Curso anterior"></div>
+        <div class="swiper-button-next" aria-label="Curso siguiente"></div>
+        <div class="swiper-pagination" id="pag-destacados"></div>
+      </div>
+
+      <div class="text-center mt-5">
+        <a href="#" class="btn btn-outline-custom" aria-label="Ver todos los cursos destacados">Todos los cursos</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="empresas section-pad " id="campus" aria-label="Empresas que han confiado en nosotros">
+    <div class="container">
+      <h2 class="section-title text-center">Empresas a quienes hemos servido</h2>
+      <p class="section-subtitle text-center">Organizaciones líderes que confían en la calidad educativa de INEPOS</p>
+      <div class="swiper alianzas-swiper mt-5" id="swiper-alianzas">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide alianza-slide">
+            <img src="assets/img/alianzas/municipalidad-perez-zeledon.webp" alt="Municipalidad de Pérez Zeledón" loading="lazy">
+          </div>
+          <div class="swiper-slide alianza-slide">
+            <img src="assets/img/alianzas/bn.webp" alt="Banco Nacional" loading="lazy">
+          </div>
+          <div class="swiper-slide alianza-slide">
+            <img src="assets/img/alianzas/auberge-resorts.webp" alt="Auberge Resorts" loading="lazy">
+          </div>
+          <div class="swiper-slide alianza-slide">
+            <img src="assets/img/alianzas/consejo-persona-joven.webp" alt="Consejo de la Persona Joven" loading="lazy">
+          </div>
+          <div class="swiper-slide alianza-slide">
+            <img src="assets/img/alianzas/hotel-sur.webp" alt="Hotel del Sur" loading="lazy">
+          </div>
+          <div class="swiper-slide alianza-slide">
+            <img src="assets/img/alianzas/el-guarco.webp" alt="El Guarco" loading="lazy">
+          </div>
+          <div class="swiper-slide alianza-slide">
+            <img src="assets/img/alianzas/truchas-reales.webp" alt="Truchas Reales" loading="lazy">
+          </div>
+          <div class="swiper-slide alianza-slide">
+            <img src="assets/img/alianzas/guacimo.webp" alt="Guácimo" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonios section-pad " id="universidad" aria-label="Testimonios">
+    <div class="container">
+      <h2 class="section-title text-center">TESTIMONIOS</h2>
+      <p class="section-subtitle text-center">Lo que dicen nuestros estudiantes y empresas aliadas</p>
+
+      <div class="swiper mt-5" id="swiper-testimonios">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <article class="testimonio-card">
+              <div class="quote-icon" aria-hidden="true">&#8220;</div>
+              <p>"Muy complacida con el Instituto pues los cursos que he llevado me han abierto mejores oportunidades laborales."</p>
+              <div class="testimonio-author">
+                <div class="author-avatar" aria-hidden="true">EC</div>
+                <div>
+                  <strong>Emma Calvo</strong>
+                  <small>Estudiante INEPOS</small>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="swiper-slide">
+            <article class="testimonio-card">
+              <div class="quote-icon" aria-hidden="true">&#8220;</div>
+              <p>"Agradezco al instituto su preocupación por ofrecer programas técnicos en el área hospitalaria, lo cual beneficia enormemente a los profesionales de salud de nuestra región."</p>
+              <div class="testimonio-author">
+                <div class="author-avatar" aria-hidden="true">GM</div>
+                <div>
+                  <strong>Gabriel Montoya</strong>
+                  <small>Profesional de Salud</small>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="swiper-slide">
+            <article class="testimonio-card">
+              <div class="quote-icon" aria-hidden="true">&#8220;</div>
+              <p>"Como Gerente de Recursos Humanos el Instituto me ha ayudado a cumplir mis metas de capacitación a nuestros colaboradores. Esperamos seguir trabajando con ustedes."</p>
+              <div class="testimonio-author">
+                <div class="author-avatar" aria-hidden="true">BH</div>
+                <div>
+                  <strong>Bayardo Herrera</strong>
+                  <small>Gerente de Recursos Humanos</small>
+                </div>
+              </div>
+            </article>
+          </div>
+
+        </div>
+        <div class="swiper-pagination" id="pag-testimonios"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blog-section section-pad bg-white" id="blog" aria-label="Nuestro blog">
+    <div class="container">
+      <h2 class="section-title text-center">NUESTRO BLOG</h2>
+      <p class="section-subtitle text-center">Noticias, novedades y recursos educativos de INEPOS</p>
+
+      <div class="swiper mt-4" id="swiper-blog">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <article class="blog-card">
+              <div class="blog-thumb" aria-hidden="true">
+                <div class="blog-thumb-bg"></div>
+                <div class="blog-thumb-logo">
+                  <svg width="64" height="64" aria-hidden="true"><use href="assets/img/icons/sprite.svg#info-circle"></use></svg>
+                </div>
+              </div>
+              <div class="blog-body">
+                <span class="blog-date">Febrero 2026</span>
+                <h4>Apertura de matrícula I semestre 2026</h4>
+                <p>Ya están abiertas las inscripciones para los cursos técnicos y de capacitación del primer semestre. ¡Cupos limitados!</p>
+                <a href="#cursos" class="link-more" aria-label="Ver cursos disponibles">Ver cursos</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="swiper-slide">
+            <article class="blog-card">
+              <div class="blog-thumb" aria-hidden="true">
+                <div class="blog-thumb-bg" style="background: linear-gradient(135deg, #1b5e20 0%, #66bb6a 100%);"></div>
+                <div class="blog-thumb-logo">
+                  <svg width="64" height="64" aria-hidden="true"><use href="assets/img/icons/sprite.svg#info-circle"></use></svg>
+                </div>
+              </div>
+              <div class="blog-body">
+                <span class="blog-date">Enero 2026</span>
+                <h4>INEPOS firma alianza con Auberge Resorts</h4>
+                <p>Formalizamos una alianza estratégica para brindar oportunidades laborales directas a egresados del área de turismo y salud.</p>
+                <a href="#campus" class="link-more" aria-label="Conocer nuestras alianzas">Nuestras alianzas</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="swiper-slide">
+            <article class="blog-card">
+              <div class="blog-thumb" aria-hidden="true">
+                <div class="blog-thumb-bg" style="background: linear-gradient(135deg, #2e7d32 0%, #a5d6a7 100%);"></div>
+                <div class="blog-thumb-logo">
+                  <svg width="64" height="64" aria-hidden="true"><use href="assets/img/icons/sprite.svg#info-circle"></use></svg>
+                </div>
+              </div>
+              <div class="blog-body">
+                <span class="blog-date">Diciembre 2025</span>
+                <h4>Graduación de 120 estudiantes en Pérez Zeledón</h4>
+                <p>Con orgullo celebramos la graduación de nuestra más reciente promoción en las áreas de tecnología, salud y administración.</p>
+                <a href="#nosotros" class="link-more" aria-label="Conocer más sobre INEPOS">Conózcanos</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="swiper-slide">
+            <article class="blog-card">
+              <div class="blog-thumb" aria-hidden="true">
+                <div class="blog-thumb-bg" style="background: linear-gradient(135deg, #388e3c 0%, #81c784 100%);"></div>
+                <div class="blog-thumb-logo">
+                  <svg width="64" height="64" aria-hidden="true"><use href="assets/img/icons/sprite.svg#info-circle"></use></svg>
+                </div>
+              </div>
+              <div class="blog-body">
+                <span class="blog-date">Noviembre 2025</span>
+                <h4>Nuevo curso de Inteligencia Artificial disponible</h4>
+                <p>Lanzamos nuestro curso de IA aplicada a los negocios, diseñado para profesionales que desean mantenerse a la vanguardia tecnológica.</p>
+                <a href="#cursos" class="link-more" aria-label="Ver el curso de Inteligencia Artificial">Ver curso</a>
+              </div>
+            </article>
+          </div>
+
+        </div>
+        <div class="swiper-pagination" id="pag-blog"></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" id="contacto" aria-label="Pie de página INEPOS">
+    <div class="container">
+      <div class="footer-logo">
+        <img src="assets/img/Logo.webp" alt="INEPOS logo" class="footer-logo-img" width="160" height="56" loading="lazy" />
+      </div>
+
+      <nav class="footer-nav" aria-label="Navegación footer">
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#cursos">Cursos</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#campus">Campus</a>
+        <a href="#universidad">Universidad</a>
+        <a href="#blog">Blog</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <div class="footer-social" aria-label="Redes sociales">
+        <a href="https://www.youtube.com/@UciartePerezZeledon" aria-label="YouTube INEPOS" class="social-link" target="_blank" rel="noopener noreferrer">
+          <svg width="22" height="22" aria-hidden="true"><use href="assets/img/icons/sprite.svg#youtube"></use></svg>
+        </a>
+        <a href="https://www.facebook.com/UciartePZ?mibextid=LQQJ4d" aria-label="Facebook INEPOS" class="social-link" target="_blank" rel="noopener noreferrer">
+          <svg width="22" height="22" aria-hidden="true"><use href="assets/img/icons/sprite.svg#facebook"></use></svg>
+        </a>
+        <a href="https://www.instagram.com/uciartepz_" aria-label="Instagram INEPOS" class="social-link" target="_blank" rel="noopener noreferrer">
+          <svg width="22" height="22" aria-hidden="true"><use href="assets/img/icons/sprite.svg#instagram"></use></svg>
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        <p>Derechos Reservados &copy; 2026 <strong>INEPOS</strong> — Administrado por IO Leading Digital S.A.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://api.whatsapp.com/send?phone=50684408440" class="whatsapp-fab" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+    <svg width="30" height="30" aria-hidden="true"><use href="assets/img/icons/sprite.svg#whatsapp"></use></svg>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
