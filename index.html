@@ -3,17 +3,65 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>INEPOS — Instituto Educativo</title>
-  <meta name="description" content="INEPOS — Formación técnica, vocacional y superior en Costa Rica." />
+  <title>INEPOS — Instituto Educativo | Formación Técnica y Superior en Costa Rica</title>
+  <meta name="description" content="INEPOS ofrece formación técnica, vocacional y superior en Pérez Zeledón y San Vito. Cursos presenciales y virtuales con certificación. ¡Matrícula abierta!" />
+  <meta name="keywords" content="INEPOS, instituto educativo Costa Rica, cursos técnicos Pérez Zeledón, formación profesional, capacitación empresarial, San Vito Coto Brus" />
+  <meta name="author" content="INEPOS — Instituto Educativo" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://inepos.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="INEPOS — Instituto Educativo | Formación Técnica y Superior" />
+  <meta property="og:description" content="Formación técnica, vocacional y superior en Costa Rica. Dos sedes: Pérez Zeledón y San Vito. Cursos presenciales y virtuales." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://inepos.com/" />
+  <meta property="og:site_name" content="INEPOS" />
+  <meta property="og:locale" content="es_CR" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="INEPOS — Instituto Educativo" />
+  <meta name="twitter:description" content="Formación técnica, vocacional y superior en Costa Rica." />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
   <link rel="icon" type="image/webp" href="assets/img/favicon.webp" />
   <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "INEPOS",
+    "alternateName": "Instituto Estudios Posgrado Gerardo Velásquez",
+    "url": "https://inepos.com",
+    "logo": "https://inepos.com/assets/img/Logo.webp",
+    "description": "Instituto educativo con oferta técnica, vocacional y superior en Costa Rica.",
+    "foundingDate": "2012",
+    "telephone": "+50627701213",
+    "email": "info@inepos.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Barrio Boston, contiguo al Hotel Boston",
+      "addressLocality": "Pérez Zeledón",
+      "addressCountry": "CR"
+    },
+    "sameAs": [
+      "https://www.facebook.com/UciartePZ",
+      "https://www.youtube.com/@UciartePerezZeledon",
+      "https://www.instagram.com/uciartepz_"
+    ]
+  }
+  </script>
 </head>
 <body>
+
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
 
   <div class="topbar">
     <div class="container d-flex justify-content-end align-items-center gap-4">
@@ -38,25 +86,30 @@
       </button>
       <div class="collapse navbar-collapse" id="navMenu">
         <ul class="navbar-nav ms-auto gap-1">
-          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
-          <li class="nav-item"><a class="nav-link" href="#cursos">Cursos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
-          <li class="nav-item"><a class="nav-link" href="#campus">Campus</a></li>
-          <li class="nav-item"><a class="nav-link" href="#universidad">Universidad</a></li>
-          <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="cursos.html">Cursos</a></li>
+          <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://campus.inepos.com/" target="_blank" rel="noopener noreferrer">Campus</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://uciarte.ac.cr/" target="_blank" rel="noopener noreferrer">Universidad</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          <li class="nav-item">
+            <a href="suscripcion.html" class="btn-nav-suscripcion" aria-label="Suscribirse al boletín de INEPOS">Suscríbete</a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
+
+  <main id="main-content" tabindex="-1">
 
   <section class="hero" id="inicio" aria-label="Banner principal">
     <div class="hero-overlay"></div>
     <div class="swiper hero-swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <div class="hero-bg" style="background-image: url('assets/img/banner.webp')"></div>
+          <div class="hero-bg hero-slide-1"></div>
           <div class="hero-content container">
             <h1>SERVICIOS Y FACILIDADES</h1>
             <p>Conozca los servicios que ofrece el instituto para alcanzar metas de superación</p>
@@ -64,7 +117,7 @@
           </div>
         </div>
         <div class="swiper-slide">
-          <div class="hero-bg" style="background-image: url('assets/img/banner2.webp')"></div>
+          <div class="hero-bg hero-slide-2"></div>
           <div class="hero-content container">
             <h1>FORMACIÓN TÉCNICA Y SUPERIOR</h1>
             <p>Programas educativos de calidad en Pérez Zeledón y San Vito de Coto Brus</p>
@@ -72,7 +125,7 @@
           </div>
         </div>
         <div class="swiper-slide">
-          <div class="hero-bg hero-bg--banner3" style="background-image: url('assets/img/banner3.webp')"></div>
+          <div class="hero-bg hero-bg--banner3 hero-slide-3"></div>
           <div class="hero-content container">
             <h1>EMPRENDEDURISMO E INNOVACIÓN</h1>
             <p>Desarrolle sus habilidades con tecnología de vanguardia y alto compromiso con la calidad</p>
@@ -106,7 +159,7 @@
             <h2 class="section-title text-start">SOBRE NOSOTROS</h2>
             <p>En <strong>INEPOS</strong> impartimos formación y capacitación para personas y empresas que buscan desarrollar habilidades y adquirir conocimientos en áreas específicas y relevantes para el mercado laboral actual, el desarrollo y crecimiento personal y la preparación para el emprendimiento.</p>
             <p>Contamos con dos sedes: <strong>Pérez Zeledón</strong> y <strong>San Vito</strong> donde desarrollamos programas que abarcan educación técnica, vocacional, educación superior y postgrado; con tecnología de vanguardia y un alto compromiso con la calidad educativa.</p>
-            <a href="#" class="btn btn-primary-custom mt-2" aria-label="Conocer más sobre INEPOS">Conózcanos</a>
+            <a href="nosotros.html" class="btn btn-primary-custom mt-2" aria-label="Conocer más sobre INEPOS">Conózcanos</a>
           </div>
         </div>
       </div>
@@ -126,7 +179,7 @@
             </div>
             <h3>Formación profesional</h3>
             <p>Programas técnicos y vocacionales diseñados para insertar al estudiante en el mercado laboral con competencias actualizadas.</p>
-            <a href="#cursos" class="link-more" aria-label="Leer más sobre Formación profesional">Leer más</a>
+            <a href="servicios.html" class="link-more" aria-label="Leer más sobre Formación profesional">Leer más</a>
           </article>
         </div>
 
@@ -137,7 +190,7 @@
             </div>
             <h3>Capacitación empresarial</h3>
             <p>Desarrollamos planes de capacitación a medida para empresas que desean fortalecer el talento humano y mejorar su productividad.</p>
-            <a href="#contacto" class="link-more" aria-label="Leer más sobre Capacitación empresarial">Leer más</a>
+            <a href="servicios.html" class="link-more" aria-label="Leer más sobre Capacitación empresarial">Leer más</a>
           </article>
         </div>
 
@@ -148,7 +201,7 @@
             </div>
             <h3>Emprendedurismo</h3>
             <p>Fomentamos la cultura emprendedora brindando herramientas y conocimientos para desarrollar ideas de negocio exitosas.</p>
-            <a href="#contacto" class="link-more" aria-label="Leer más sobre Emprendedurismo">Leer más</a>
+            <a href="servicios.html" class="link-more" aria-label="Leer más sobre Emprendedurismo">Leer más</a>
           </article>
         </div>
 
@@ -191,7 +244,7 @@
                     <span class="meta-value price">&#8353;40.800</span>
                   </div>
                 </div>
-                <a href="#" class="btn-more" aria-label="Más información sobre Introducción a Redes">Más información</a>
+                <a href="curso-detalle.html" class="btn-more" aria-label="Más información sobre Introducción a Redes">Más información</a>
               </div>
             </article>
           </div>
@@ -223,7 +276,7 @@
                     <span class="meta-value price">&#8353;40.800</span>
                   </div>
                 </div>
-                <a href="#" class="btn-more" aria-label="Más información sobre Experto en Planillas">Más información</a>
+                <a href="curso-detalle.html" class="btn-more" aria-label="Más información sobre Experto en Planillas">Más información</a>
               </div>
             </article>
           </div>
@@ -255,7 +308,7 @@
                     <span class="meta-value price">&#8353;40.800</span>
                   </div>
                 </div>
-                <a href="#" class="btn-more" aria-label="Más información sobre Masaje Básico">Más información</a>
+                <a href="curso-detalle.html" class="btn-more" aria-label="Más información sobre Masaje Básico">Más información</a>
               </div>
             </article>
           </div>
@@ -287,7 +340,7 @@
                     <span class="meta-value price">&#8353;49.980</span>
                   </div>
                 </div>
-                <a href="#" class="btn-more" aria-label="Más información sobre Diseño Gráfico">Más información</a>
+                <a href="curso-detalle.html" class="btn-more" aria-label="Más información sobre Diseño Gráfico">Más información</a>
               </div>
             </article>
           </div>
@@ -299,7 +352,7 @@
       </div>
 
       <div class="text-center mt-5">
-        <a href="#" class="btn btn-outline-custom" aria-label="Ver todos los cursos">Todos los cursos</a>
+        <a href="cursos.html" class="btn btn-outline-custom" aria-label="Ver todos los cursos">Todos los cursos</a>
       </div>
     </div>
   </section>
@@ -339,7 +392,7 @@
                     <span class="meta-value price">&#8353;49.980</span>
                   </div>
                 </div>
-                <a href="#" class="btn-more" aria-label="Más información sobre Experto en Planillas destacado">Más información</a>
+                <a href="curso-detalle.html" class="btn-more" aria-label="Más información sobre Experto en Planillas destacado">Más información</a>
               </div>
             </article>
           </div>
@@ -371,7 +424,7 @@
                     <span class="meta-value price">&#8353;40.800</span>
                   </div>
                 </div>
-                <a href="#" class="btn-more" aria-label="Más información sobre Asistente en Farmacia">Más información</a>
+                <a href="curso-detalle.html" class="btn-more" aria-label="Más información sobre Asistente en Farmacia">Más información</a>
               </div>
             </article>
           </div>
@@ -403,7 +456,7 @@
                     <span class="meta-value price">&#8353;40.800</span>
                   </div>
                 </div>
-                <a href="#" class="btn-more" aria-label="Más información sobre Asistente de Pacientes">Más información</a>
+                <a href="curso-detalle.html" class="btn-more" aria-label="Más información sobre Asistente de Pacientes">Más información</a>
               </div>
             </article>
           </div>
@@ -522,16 +575,13 @@
           <div class="swiper-slide">
             <article class="blog-card">
               <div class="blog-thumb" aria-hidden="true">
-                <div class="blog-thumb-bg"></div>
-                <div class="blog-thumb-logo">
-                  <svg width="64" height="64" aria-hidden="true"><use href="assets/img/icons/sprite.svg#info-circle"></use></svg>
-                </div>
+                <i class="bi bi-journal-check"></i>
               </div>
               <div class="blog-body">
                 <span class="blog-date">Febrero 2026</span>
                 <h4>Apertura de matrícula I semestre 2026</h4>
                 <p>Ya están abiertas las inscripciones para los cursos técnicos y de capacitación del primer semestre. ¡Cupos limitados!</p>
-                <a href="#cursos" class="link-more" aria-label="Ver cursos disponibles">Ver cursos</a>
+                <a href="blog-detalle.html" class="link-more" aria-label="Ver artículo completo">Leer más</a>
               </div>
             </article>
           </div>
@@ -539,16 +589,13 @@
           <div class="swiper-slide">
             <article class="blog-card">
               <div class="blog-thumb" aria-hidden="true">
-                <div class="blog-thumb-bg" style="background: linear-gradient(135deg, #1b5e20 0%, #66bb6a 100%);"></div>
-                <div class="blog-thumb-logo">
-                  <svg width="64" height="64" aria-hidden="true"><use href="assets/img/icons/sprite.svg#info-circle"></use></svg>
-                </div>
+                <i class="bi bi-people-fill"></i>
               </div>
               <div class="blog-body">
                 <span class="blog-date">Enero 2026</span>
                 <h4>INEPOS firma alianza con Auberge Resorts</h4>
                 <p>Formalizamos una alianza estratégica para brindar oportunidades laborales directas a egresados del área de turismo y salud.</p>
-                <a href="#campus" class="link-more" aria-label="Conocer nuestras alianzas">Nuestras alianzas</a>
+                <a href="blog.html" class="link-more" aria-label="Leer artículo completo">Leer más</a>
               </div>
             </article>
           </div>
@@ -556,16 +603,13 @@
           <div class="swiper-slide">
             <article class="blog-card">
               <div class="blog-thumb" aria-hidden="true">
-                <div class="blog-thumb-bg" style="background: linear-gradient(135deg, #2e7d32 0%, #a5d6a7 100%);"></div>
-                <div class="blog-thumb-logo">
-                  <svg width="64" height="64" aria-hidden="true"><use href="assets/img/icons/sprite.svg#info-circle"></use></svg>
-                </div>
+                <i class="bi bi-mortarboard-fill"></i>
               </div>
               <div class="blog-body">
                 <span class="blog-date">Diciembre 2025</span>
                 <h4>Graduación de 120 estudiantes en Pérez Zeledón</h4>
                 <p>Con orgullo celebramos la graduación de nuestra más reciente promoción en las áreas de tecnología, salud y administración.</p>
-                <a href="#nosotros" class="link-more" aria-label="Conocer más sobre INEPOS">Conózcanos</a>
+                <a href="blog.html" class="link-more" aria-label="Leer artículo completo">Leer más</a>
               </div>
             </article>
           </div>
@@ -573,16 +617,13 @@
           <div class="swiper-slide">
             <article class="blog-card">
               <div class="blog-thumb" aria-hidden="true">
-                <div class="blog-thumb-bg" style="background: linear-gradient(135deg, #388e3c 0%, #81c784 100%);"></div>
-                <div class="blog-thumb-logo">
-                  <svg width="64" height="64" aria-hidden="true"><use href="assets/img/icons/sprite.svg#info-circle"></use></svg>
-                </div>
+                <i class="bi bi-cpu-fill"></i>
               </div>
               <div class="blog-body">
                 <span class="blog-date">Noviembre 2025</span>
                 <h4>Nuevo curso de Inteligencia Artificial disponible</h4>
                 <p>Lanzamos nuestro curso de IA aplicada a los negocios, diseñado para profesionales que desean mantenerse a la vanguardia tecnológica.</p>
-                <a href="#cursos" class="link-more" aria-label="Ver el curso de Inteligencia Artificial">Ver curso</a>
+                <a href="blog.html" class="link-more" aria-label="Leer artículo completo">Leer más</a>
               </div>
             </article>
           </div>
@@ -593,6 +634,8 @@
     </div>
   </section>
 
+  </main><!-- fin #main-content -->
+
   <footer class="footer" id="contacto" aria-label="Pie de página INEPOS">
     <div class="container">
       <div class="footer-logo">
@@ -600,14 +643,14 @@
       </div>
 
       <nav class="footer-nav" aria-label="Navegación footer">
-        <a href="#inicio">Inicio</a>
-        <a href="#nosotros">Nosotros</a>
-        <a href="#cursos">Cursos</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#campus">Campus</a>
-        <a href="#universidad">Universidad</a>
-        <a href="#blog">Blog</a>
-        <a href="#contacto">Contacto</a>
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="cursos.html">Cursos</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="https://campus.inepos.com/" target="_blank" rel="noopener noreferrer">Campus</a>
+        <a href="https://uciarte.ac.cr/" target="_blank" rel="noopener noreferrer">Universidad</a>
+        <a href="blog.html">Blog</a>
+        <a href="contacto.html">Contacto</a>
       </nav>
 
       <div class="footer-social" aria-label="Redes sociales">

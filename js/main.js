@@ -172,7 +172,7 @@
   });
 
   const fadeEls = document.querySelectorAll(
-    '.servicio-card, .course-card, .blog-card, .testimonio-card'
+    '.servicio-card, .course-card, .blog-card, .testimonio-card, .mv-card, .valor-card, .timeline-card, .por-que-card, .sede-card'
   );
 
   if ('IntersectionObserver' in window) {
@@ -186,7 +186,7 @@
           }
         });
       },
-      { threshold: 0.12 }
+      { threshold: 0.1 }
     );
 
     fadeEls.forEach(function (el) {
@@ -196,4 +196,83 @@
       observer.observe(el);
     });
   }
+
+  (function () {
+    var page = window.location.pathname.split('/').pop() || 'index.html';
+    document.querySelectorAll('.nav-link').forEach(function (link) {
+      var href = link.getAttribute('href') || '';
+      if (href === page || (page === '' && href === 'index.html')) {
+        link.classList.add('active-page');
+      }
+    });
+  })();
+
+  var counters = document.querySelectorAll('[data-counter]');
+  if (counters.length && 'IntersectionObserver' in window) {
+    var counterObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          var el = entry.target;
+          var target = parseInt(el.dataset.counter, 10);
+          var duration = 1800;
+          var step = target / (duration / 16);
+          var current = 0;
+          counterObserver.unobserve(el);
+          var timer = setInterval(function () {
+            current += step;
+            if (current >= target) { current = target; clearInterval(timer); }
+            el.textContent = Math.floor(current).toLocaleString('es-CR');
+          }, 16);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    counters.forEach(function (c) { counterObserver.observe(c); });
+  }
+
+  var filterPills = document.querySelectorAll('.filter-pill');
+  if (filterPills.length) {
+    filterPills.forEach(function (pill) {
+      pill.addEventListener('click', function () {
+        filterPills.forEach(function (p) { p.classList.remove('active'); });
+        this.classList.add('active');
+        var filter = this.dataset.filter;
+        document.querySelectorAll('.curso-item').forEach(function (item) {
+          if (filter === 'todos' || item.dataset.category === filter) {
+            item.classList.remove('hidden');
+          } else {
+            item.classList.add('hidden');
+          }
+        });
+      });
+    });
+  }
+
+  document.querySelectorAll('.form-custom:not(#form-contacto):not(#form-suscripcion)').forEach(function (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var valid = true;
+      form.querySelectorAll('[required]').forEach(function (field) {
+        if (!field.value.trim()) {
+          field.classList.add('is-invalid');
+          valid = false;
+        } else {
+          field.classList.remove('is-invalid');
+        }
+      });
+      if (valid) {
+        var msg = form.querySelector('.form-success-msg');
+        if (msg) {
+          msg.style.display = 'block';
+          form.reset();
+          setTimeout(function () { msg.style.display = 'none'; }, 5000);
+        }
+      }
+    });
+
+    form.querySelectorAll('[required]').forEach(function (field) {
+      field.addEventListener('input', function () { this.classList.remove('is-invalid'); });
+    });
+  });
+
 })();
